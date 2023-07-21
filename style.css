@@ -8,7 +8,7 @@
 }
 
 body {
-  font-size: 100%;
+  font-size: 100%;         
   background: #DCDFCC;
 }
 
@@ -17,12 +17,15 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 24px;
+  padding: 5px;
   background-color: #1E1E1E;
 }
 
 .cabecalho-imagem {
-  height: 178px;
+  display: flex;
+  height: 100px;
+  justify-content: left;
+
 }
 
 .cabecalho-menu {
@@ -34,7 +37,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #FFF;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .conteudo {
