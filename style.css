@@ -28,11 +28,24 @@ body {
 }
 
 .cabecalho-imagem {
-  margin-left: 2%;
-  width: 80px;
-  /* Reduzindo o tamanho do logo */
-  height: 80px;
-  /* Reduzindo o tamanho do logo */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Espaçamento entre o logo e o texto */
+}
+
+.cabecalho-imagem img {
+  width: 60px;
+  /* Tamanho do logo */
+  height: 60px;
+  /* Tamanho do logo */
+}
+
+.cabecalho-nome-cafe {
+  color: #FFF;
+  font-family: 'Rufina', serif;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .cabecalho-menu {
@@ -45,7 +58,7 @@ body {
   text-align: center;
   font-family: 'Rufina', serif;
   /* Certifique-se de que a fonte Rufina seja carregada */
-  font-size: 24px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -75,26 +88,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-direction: row; /* Altera a direção do flexbox para ficar em linha */
+  flex-direction: row;
+  /* Altera a direção do flexbox para ficar em linha */
 }
 
 /* Estilos adicionais para ajustar o carrossel à direita */
 .conteudo-principal-imagem-carrossel {
-  flex: 0 0 60%; /* Define a largura do carrossel (20% do espaço disponível) */
-  max-width: 700px; /* Ajusta a largura máxima do carrossel */
+  flex: 0 0 60%;
+  /* Define a largura do carrossel (20% do espaço disponível) */
+  max-width: 700px;
+  /* Ajusta a largura máxima do carrossel */
   margin-top: 100px;
   margin-bottom: 110px;
-  margin-right: 20px; /* Empurre o carrossel para a direita */
+  margin-right: 20px;
+  /* Empurre o carrossel para a direita */
   border-radius: 30px;
 }
 
 .carousel-inner img {
-  border-radius: 30px; /* Mesmo valor que o utilizado na classe conteudo-principal-imagem-carrossel */
+  border-radius: 30px;
+  /* Mesmo valor que o utilizado na classe conteudo-principal-imagem-carrossel */
 }
 
 /* Ajuste opcional para deixar o texto do conteúdo escrito um pouco mais próximo do carrossel */
 .conteudo-principal-escrito {
-  flex: 1; /* Define o espaço flexível para que o texto ocupe o restante do espaço */
+  flex: 1;
+  /* Define o espaço flexível para que o texto ocupe o restante do espaço */
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -102,11 +121,13 @@ body {
 /* Media query para dispositivos com telas menores */
 @media screen and (max-width: 768px) {
   .conteudo-principal {
-    flex-direction: column; /* Altera a direção do flexbox para ficar em coluna */
+    flex-direction: column;
+    /* Altera a direção do flexbox para ficar em coluna */
   }
 
   .conteudo-principal-escrito {
-    margin-right: 0; /* Remove a margem direita para o texto ficar alinhado à esquerda */
+    margin-right: 0;
+    /* Remove a margem direita para o texto ficar alinhado à esquerda */
   }
 }
 
@@ -423,8 +444,10 @@ body {
   gap: 32px;
   padding: 24px;
   justify-content: space-around;
-  width: 100px; /* Defina a largura desejada */
-  height: 100px; /* Defina a altura desejada */
+  width: 100px;
+  /* Defina a largura desejada */
+  height: 100px;
+  /* Defina a altura desejada */
 }
 
 /* Estilo personalizado para o botão do Instagram e WhatsApp */
