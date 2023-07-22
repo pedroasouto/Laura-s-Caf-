@@ -356,3 +356,28 @@ body {
   padding: 24px;
   justify-content: space-around;
 }
+
+/* Estilo personalizado para o botão do Instagram e WhatsApp */
+.instagram-btn-small, .whatsapp-btn-small {
+  background-color: #DCDFCC;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.instagram-btn-small img {
+  width: 20px; /* Largura da imagem SVG do Instagram */
+  height: 20px; /* Altura da imagem SVG do Instagram */
+  margin-right: 5px;
+}
+
+.whatsapp-btn-small img {
+  width: 20px; /* Largura da imagem SVG do Instagram */
+  height: 20px; /* Altura da imagem SVG do Instagram */
+  margin-right: 5px;
+}
