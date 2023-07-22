@@ -132,21 +132,39 @@
 
     <section class="conteudo-principal4">
       
-      <div class="conteudo-email-telefone-eventos">
-      <h1 class="conteudo-contato-titulo">Contato</h1>
-      
-      <h2 class="conteudo-email-subtitulo">Subtitulo Email</h2>
-      <p class="conteudo-email-paragrafo">digite o email aqui</p>
-
-      <h2 class="conteudo-telefone-subtitulo">Subtitulo Telefone</h2>
-      <p class="conteudo-telefone-paragrafo">digite o telefone aqui</p>
-
-      <h2 class="conteudo-eventos-subtitulo">Subtitulo Eventos Privados</h2>
-      <p class="conteudo-eventos-paragrafo">telefone eventos privados</p>
-      </div>
-
-      <img class="conteudo-imagem-contatos" src="imgdoscontatos.svg" alt="imagem contato">
-
+      <section id="contact">
+        <h2>Entre em Contato</h2>
+        <p>Deixe-nos uma mensagem se tiver alguma dúvida ou comentário.</p>
+        
+        <!-- Formulário de Contato -->
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    
+        <!-- Informações de Contato -->
+        <div class="contato-info">
+            <h3>Contato</h3>
+            <p>Telefone: (XX) XXXX-XXXX</p>
+            
+            <!-- Botão do WhatsApp com a imagem SVG -->
+        <a class="whatsapp-btn-small" href="https://wa.me/3133333333" target="_blank">
+          <img src="whatsapp.svg" alt="WhatsApp">
+          
+      </a>
+            <!-- Botão do Instagram com a imagem SVG -->
+            <a class="instagram-btn-small" href="https://www.instagram.com/visaojrufop" target="_blank">
+                <img src="instagram-icon.svg" alt="Instagram">
+            </a>
+        </div>
     </section>
 
   </main>
