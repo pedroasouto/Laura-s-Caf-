@@ -15,7 +15,7 @@ body {
 /* Estilos do cabeçalho */
 .cabecalho {
   width: 100%;
-  height: 120px;
+  height: 80px;
   /* Reduzindo a altura da faixa preta */
   background: #1E1E1E;
   display: flex;
@@ -28,9 +28,10 @@ body {
 }
 
 .cabecalho-imagem {
-  width: 100px;
+  margin-left: 2%;
+  width: 80px;
   /* Reduzindo o tamanho do logo */
-  height: 100px;
+  height: 80px;
   /* Reduzindo o tamanho do logo */
 }
 
@@ -48,6 +49,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-decoration: none;
 }
 
 /* Para alinhar os itens do menu na faixa preta */
@@ -71,15 +73,18 @@ body {
 /* Estilos para o carrossel e conteúdo */
 .conteudo-principal {
   display: flex;
-  flex-wrap: wrap-reverse; /* Inverte a ordem para ficar responsivo */
   align-items: center;
   justify-content: space-around;
+  flex-direction: row; /* Altera a direção do flexbox para ficar em linha */
 }
 
 /* Estilos adicionais para ajustar o carrossel à direita */
 .conteudo-principal-imagem-carrossel {
-  max-width: 20%; /* Ajusta a largura do carrossel */
-  margin-left: auto; /* Empurre o carrossel para a direita */
+  flex: 0 0 60%; /* Define a largura do carrossel (20% do espaço disponível) */
+  max-width: 700px; /* Ajusta a largura máxima do carrossel */
+  margin-top: 100px;
+  margin-bottom: 110px;
+  margin-right: 20px; /* Empurre o carrossel para a direita */
   border-radius: 30px;
 }
 
@@ -90,6 +95,7 @@ body {
 /* Ajuste opcional para deixar o texto do conteúdo escrito um pouco mais próximo do carrossel */
 .conteudo-principal-escrito {
   flex: 1; /* Define o espaço flexível para que o texto ocupe o restante do espaço */
+  margin-left: 20px;
   margin-right: 20px;
 }
 
@@ -104,22 +110,31 @@ body {
   }
 }
 
+
 .conteudo-principal-escrito-titulo {
   font-family: 'Roboto', sans-serif;
   color: #181E21;
   font-weight: 700;
   font-size: 48px;
-  display: flex;
-  flex-direction: row;
-  align-items: left;
-  justify-content: left;
+  margin-top: 0%;
 }
 
 .conteudo-principal-escrito-paragrafo {
+  margin-top: 40px;
+  margin-left: 40px;
   font-family: 'Open Sans', sans-serif;
   color: #181E21;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 22px;
+}
+
+.conteudo-principal-escrito-paragrafo2 {
+  margin-top: 40px;
+  margin-left: 50px;
+  font-family: 'Open Sans', sans-serif;
+  color: #181E21;
+  font-weight: 700;
+  font-size: 22px;
 }
 
 .conteudo-sobrenos {

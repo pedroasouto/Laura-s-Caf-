@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rufina&display=swap" rel="stylesheet">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +14,10 @@
 </head>
 
 <!-- Cabeçalho do site -->
-<body>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+<body>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <header class="cabecalho">
     <img class="cabecalho-imagem" src="Logo.svg" alt="Logo do Lauras Cafe">
     <nav class="cabecalho-menu">
@@ -25,50 +29,49 @@
   </header>
   <main class="conteudo">
     <section id="inicio" class="conteudo-principal">
-      <div class="conteudo-principal-container">
-        <div id="carouselInicio" class="carousel slide conteudo-principal-imagem-carrossel" data-bs-ride="carousel">
-          <!-- Indicadores -->
-          <ol class="carousel-indicators">
-            <li data-bs-target="#carouselInicio" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselInicio" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselInicio" data-bs-slide-to="2"></li>
-          </ol>
-      
-          <!-- Slides -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images\Carrossel\foto1carrossel.png" alt="Imagem 1 de carrossel" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-              <img src="images\Carrossel\foto2carrossel.jpg" alt="Imagem 2 de carrossel" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-              <img src="images\Carrossel\foto3carrossel.jpg" alt="Imagem 3 de carrossel" class="d-block w-100">
-            </div>
-          </div>
-      
-          <!-- Controles de navegação -->
-          <a class="carousel-control-prev" href="#carouselInicio" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselInicio" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
-          </a>
-        </div>
-      
-        <div class="conteudo-principal-escrito">
-          <h1 class="conteudo-principal-escrito-titulo">Início</h1>
-          <p class="conteudo-principal-escrito-paragrafo">O lugar perfeito para os apaixonados por café! Aqui,
-            oferecemos uma experiência única, combinando a tradição do café com inovações refrescantes.
-            Nossos baristas especializados preparam cuidadosamente cada xícara, garantindo que cada gole traga
-            um sabor inigualável!</p>
-        </div>
+      <div class="conteudo-principal-escrito">
+        <h1 class="conteudo-principal-escrito-titulo">Início</h1>
+        <p class="conteudo-principal-escrito-paragrafo">O lugar perfeito para os apaixonados por café! Aqui,
+          oferecemos uma experiência única, combinando a tradição do café com inovações refrescantes.</p>
+        <p class="conteudo-principal-escrito-paragrafo2">Nossos baristas especializados preparam cuidadosamente cada xícara, garantindo que cada gole traga um sabor inigualável!</p>
       </div>
-
-    </section>
     
+      <div id="carouselInicio" class="carousel slide conteudo-principal-imagem-carrossel" data-bs-ride="carousel">
+    
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images\Carrossel\foto1carrossel.png" alt="Imagem 1 de carrossel" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images\Carrossel\foto2carrossel.jpg" alt="Imagem 2 de carrossel" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images\Carrossel\foto3carrossel.jpg" alt="Imagem 3 de carrossel" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images\Cafeteria\cafeteria (1).jpg" alt="Imagem 4 de carrossel" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images\Cafeteria\cafeteria (6).jpg" alt="Imagem 5 de carrossel" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images\Cafeteria\cafeteria (7).jpg" alt="Imagem 6 de carrossel" class="d-block w-100">
+          </div>
+        </div>
+    
+        <!-- Controles de navegação -->
+        <a class="carousel-control-prev" href="#carouselInicio" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselInicio" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </a>
+      </div>
+    </section>
+
     <section id="sobre-nos" class="conteudo-sobrenos">
       <div class="conteudo-sobrenos-subtitulo-historia-vertical">
         <h1 class="conteudo-sobrenos-titulo">Sobre Nós</h1>
@@ -164,7 +167,7 @@
     <div class="rodape-direita-logos">
       <img class="rodape-imagem-instagram" src="images\Redes sociais\instagram.png" alt="imagem instagram">
       <img class="rodape-imagem-facebook" src="images\Redes sociais\facebook.png" alt="imagem facebook">
-      <img class="rodape-imagem-whatsapp" src="images\Redes sociais\whatsapp.png"  alt="imagem whatsapp">
+      <img class="rodape-imagem-whatsapp" src="images\Redes sociais\whatsapp.png" alt="imagem whatsapp">
     </div>
   </footer>
 </body>
