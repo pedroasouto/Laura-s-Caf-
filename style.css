@@ -8,24 +8,30 @@
 }
 
 body {
-  font-size: 100%;         
+  font-size: 100%;
   background: #DCDFCC;
 }
 
+/* Estilos do cabeçalho */
 .cabecalho {
+  width: 100%;
+  height: 120px;
+  /* Reduzindo a altura da faixa preta */
+  background: #1E1E1E;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  /* Para alinhar os itens à esquerda e à direita */
   align-items: center;
-  justify-content: space-around;
-  padding: 5px;
-  background-color: #1E1E1E;
+  /* Para centralizar verticalmente os itens */
+  padding: 0 20px;
+  /* Adicionando espaçamento interno nas laterais do cabeçalho */
 }
 
 .cabecalho-imagem {
-  display: flex;
+  width: 100px;
+  /* Reduzindo o tamanho do logo */
   height: 100px;
-  justify-content: left;
-
+  /* Reduzindo o tamanho do logo */
 }
 
 .cabecalho-menu {
@@ -34,12 +40,28 @@ body {
 }
 
 .cabecalho-menu-item {
-  font-family: 'Roboto', sans-serif;
   color: #FFF;
+  text-align: center;
+  font-family: 'Rufina', serif;
+  /* Certifique-se de que a fonte Rufina seja carregada */
+  font-size: 24px;
+  font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  line-height: normal;
 }
 
+/* Para alinhar os itens do menu na faixa preta */
+.cabecalho-menu-item:first-child {
+  margin-left: 20px;
+  /* Espaçamento à esquerda */
+}
+
+.cabecalho-menu-item:last-child {
+  margin-right: 20px;
+  /* Espaçamento à direita */
+}
+
+/* Estilos do conteúdo */
 .conteudo {
   margin-bottom: 48px;
   border-top: 0.4px solid #FFF;
@@ -53,24 +75,36 @@ body {
 }
 
 .conteudo-principal-imagem-carrossel {
-  height: 400px;
+  width: 600px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 50px;
+  margin: 160px 0;
+  /* Aumentar o espaçamento de 160px acima e abaixo da imagem (2 vezes mais) */
 }
+
 .conteudo-principal-escrito-titulo {
-  font-family: 'Roboto', sans-serif;
+  width: 250px;
+  height: 120px;
+  flex-shrink: 0;
   color: #181E21;
+  text-align: center;
+  font-family: Rufina;
+  font-size: 50px;
+  font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  display: flex;
-  flex-direction: row;
-  align-items: left;
-  justify-content: left;
+  line-height: normal;
 }
 
 .conteudo-principal-escrito-paragrafo {
-  font-family: 'Open Sans', sans-serif;
+  width: 600px;
   color: #181E21;
+  font-family: Rufina;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  line-height: 40px;
+  text-align: justify;
 }
 
 .conteudo-sobrenos {
@@ -87,7 +121,7 @@ body {
   flex-direction: column;
   gap: 32px;
   justify-content: space-around;
-  
+
 }
 
 .conteudo-sobrenos-titulo {
@@ -103,25 +137,25 @@ body {
 .conteudo-sobrenos-subtitulo-historia {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color:#181E21;
+  color: #181E21;
 }
 
 .conteudo-sobrenos-paragrafo-historia {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  color:#181E21;
+  color: #181E21;
 }
 
 .conteudo-sobrenos-subtitulo-metodos {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color:#181E21;
+  color: #181E21;
 }
 
 .conteudo-sobrenos-paragrafo-metodos {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  color:#181E21;
+  color: #181E21;
 }
 
 .conteudo-sobrenos-subtitulo-historia-vertical {
@@ -134,7 +168,7 @@ body {
 .conteudo-sobrenos-subtitulo-origem {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color:#181E21;
+  color: #181E21;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -144,16 +178,17 @@ body {
 .conteudo-sobrenos-paragrafo-origem {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color:#181E21;
+  color: #181E21;
 }
 
 .conteudo-sobrenos-imagem {
   height: 300px;
 }
+
 .conteudo-sobrenos-paragrafo-origem {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  color:#181E21;
+  color: #181E21;
 }
 
 .conteudo-menu {
@@ -168,7 +203,7 @@ body {
 .conteudo-menu-titulo {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color:#181E21;
+  color: #181E21;
   height: 100px;
   display: flex;
   flex-direction: left;
@@ -195,6 +230,7 @@ body {
   gap: 48px;
   justify-content: space-around;
 }
+
 .conteudo-menu-cafe-5 {
   display: flex;
   flex-direction: row;
@@ -234,6 +270,7 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+
 .conteudo-imagem-cafe-um {
   height: 100px;
 }
@@ -261,7 +298,7 @@ body {
 .conteudo-cafe-um-subtitulo {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color:#181E21;
+  color: #181E21;
 }
 
 .conteudo-principal4 {
@@ -279,38 +316,39 @@ body {
 .conteudo-email-subtitulo {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color:#181E21;
+  color: #181E21;
 }
 
 .conteudo-telefone-subtitulo {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color:#181E21;
+  color: #181E21;
 }
 
 .conteudo-eventos-subtitulo {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color:#181E21;
+  color: #181E21;
 }
 
 .conteudo-email-paragrafo {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  color:#181E21;
+  color: #181E21;
 }
 
-.conteudo-telefone-paragrafo{
+.conteudo-telefone-paragrafo {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  color:#181E21;
+  color: #181E21;
 }
 
-.conteudo-eventos-paragrafo{
+.conteudo-eventos-paragrafo {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  color:#181E21;
+  color: #181E21;
 }
+
 .conteudo-principal4 {
   display: flex;
   flex-direction: row;
@@ -358,7 +396,8 @@ body {
 }
 
 /* Estilo personalizado para o botão do Instagram e WhatsApp */
-.instagram-btn-small, .whatsapp-btn-small {
+.instagram-btn-small,
+.whatsapp-btn-small {
   background-color: #DCDFCC;
   color: #fff;
   padding: 5px 10px;
@@ -371,13 +410,17 @@ body {
 }
 
 .instagram-btn-small img {
-  width: 20px; /* Largura da imagem SVG do Instagram */
-  height: 20px; /* Altura da imagem SVG do Instagram */
+  width: 20px;
+  /* Largura da imagem SVG do Instagram */
+  height: 20px;
+  /* Altura da imagem SVG do Instagram */
   margin-right: 5px;
 }
 
 .whatsapp-btn-small img {
-  width: 20px; /* Largura da imagem SVG do Instagram */
-  height: 20px; /* Altura da imagem SVG do Instagram */
+  width: 20px;
+  /* Largura da imagem SVG do Instagram */
+  height: 20px;
+  /* Altura da imagem SVG do Instagram */
   margin-right: 5px;
 }
