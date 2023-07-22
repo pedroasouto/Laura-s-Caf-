@@ -10,177 +10,163 @@
 </head>
 
 <!-- Cabeçalho do site -->
-
 <body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   <header class="cabecalho">
     <img class="cabecalho-imagem" src="Logo.svg" alt="Logo do Lauras Cafe">
     <nav class="cabecalho-menu">
-      <a class="cabecalho-menu-item">Início</a>
-      <a class="cabecalho-menu-item">Sobre Nós</a>
-      <a class="cabecalho-menu-item">Menu</a>
-      <a class="cabecalho-menu-item">Contato</a>
+      <a class="cabecalho-menu-item" href="#inicio">Início</a>
+      <a class="cabecalho-menu-item" href="#sobre-nos">Sobre Nós</a>
+      <a class="cabecalho-menu-item" href="#menu">Menu</a>
+      <a class="cabecalho-menu-item" href="#contato">Contato</a>
     </nav>
   </header>
-
   <main class="conteudo">
-    <section class="conteudo-principal">
-
-      <div class="conteudo-principal-escrito">
-        <h1 class="conteudo-principal-escrito-titulo">Início</h1>
-        <p class="conteudo-principal-escrito-paragrafo">O lugar perfeito para os apaixonados por café! Aqui,
-          oferecemos uma experiência única, combinando a tradição do café com inovações refrescantes.
-          Nossos baristas especializados preparam cuidadosamente cada xícara, garantindo que cada gole traga
-          um sabor inigualável!</p>
-
+    <section id="inicio" class="conteudo-principal">
+      <div class="conteudo-principal-container">
+        <div id="carouselInicio" class="carousel slide conteudo-principal-imagem-carrossel" data-bs-ride="carousel">
+          <!-- Indicadores -->
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carouselInicio" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselInicio" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselInicio" data-bs-slide-to="2"></li>
+          </ol>
+      
+          <!-- Slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images\Carrossel\foto1carrossel.png" alt="Imagem 1 de carrossel" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="images\Carrossel\foto2carrossel.jpg" alt="Imagem 2 de carrossel" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="images\Carrossel\foto3carrossel.jpg" alt="Imagem 3 de carrossel" class="d-block w-100">
+            </div>
+          </div>
+      
+          <!-- Controles de navegação -->
+          <a class="carousel-control-prev" href="#carouselInicio" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselInicio" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </a>
+        </div>
+      
+        <div class="conteudo-principal-escrito">
+          <h1 class="conteudo-principal-escrito-titulo">Início</h1>
+          <p class="conteudo-principal-escrito-paragrafo">O lugar perfeito para os apaixonados por café! Aqui,
+            oferecemos uma experiência única, combinando a tradição do café com inovações refrescantes.
+            Nossos baristas especializados preparam cuidadosamente cada xícara, garantindo que cada gole traga
+            um sabor inigualável!</p>
+        </div>
       </div>
-      <img class="conteudo-principal-imagem-carrossel" src="foto1carrossel.svg" alt="Imagem 1 de carrossel">
 
     </section>
-
-
-
-
-
-
-
-    <section class="conteudo-sobrenos">
-
+    
+    <section id="sobre-nos" class="conteudo-sobrenos">
       <div class="conteudo-sobrenos-subtitulo-historia-vertical">
         <h1 class="conteudo-sobrenos-titulo">Sobre Nós</h1>
         <h2 class="conteudo-sobrenos-subtitulo-historia">Historia</h2>
         <p class="conteudo-sobrenos-paragrafo-historia">paragrafoHistória</p>
-
         <h2 class="conteudo-sobrenos-subtitulo-metodos">Métodos</h2>
         <p class="conteudo-sobrenos-paragrafo-metodos">paragrafo sobre os metodos</p>
       </div>
-      </div>
-
       <h2 class="conteudo-sobrenos-subtitulo-origem">Origem dos grãos</h2>
       <p class="conteudo-sobrenos-paragrafo-origem">paragafo origem dos graos</p>
-
       <img class="conteudo-sobrenos-imagem" src="imgsobrenos.svg" alt="Imagem sobre nos">
+    </section>
+    <section id="menu" class="conteudo-menu">
+      <h1 class="conteudo-menu-titulo">Menu</h1>
+      <div class="conteudo-menu-esquerda-cafe-1">
+        <img class="conteudo-imagem-cafe-um" src="tipo1cafe.svg" alt="Imagem de 1 tipo de cafe">
+        <div class="conteudo-menu-direita-cafe-1-subtitulo">
+          <h2 class="conteudo-cafe-um-subtitulo">Subtitulo do cafe 1</h2>
+          <p class="conteudo-cafe-um-paragrafo">paragrafo tipos de cafes para vender</p>
+        </div>
+        <div>
+          <div class="conteudo-menu-esquerda-cafe-2">
+            <img class="conteudo-imagem-cafe-dois" src="tipo2cafe.svg" alt="Imagem de 2 tipo de cafe">
+            <div class="conteudo-menu-direita-cafe-2-subtitulo">
+              <h2 class="conteudo-cafe-dois-subtitulo">Subtitulo cafe 2</h2>
+              <p class="conteudo-cafe-dois-paragrafo">paragrafo tipos de cafe 2 para vender</p>
+            </div>
+            <div>
+              <img class="conteudo-imagem-cafe-tres" src="tipo3cafe.svg" alt="Imagem de 3 tipo de cafe">
+              <h2 class="conteudo-cafe-tres-subtitulo">Subtitulo do cafe 3</h2>
+              <p class="conteudo-cafe-tres-paragrafo">texto tipos de cafe com leites para vender</p>
+            </div>
+          </div>
+          <div class="conteudo-menu-cafe-4">
+            <img class="conteudo-imagem-cafe-quatro" src="tipo4cafe.svg" alt="Imagem de 4 tipo de cafe">
+            <div class="conteudo-menu-cafe-4-subtitulo">
+              <h2 class="conteudo-cafe-quatro-subtitulo">Subtitulo do cafe 4</h2>
+              <p class="conteudo-cafe-quatro-paragrafo">paragrafo tipos de cafes 4 para vender</p>
+            </div>
+          </div>
+          <div class="conteudo-menu-cafe-5">
+            <img class="conteudo-imagem-cafe-cinco" src="tipo5cafe.svg" alt="Imagem de 5 tipo de cafe">
+            <div class="conteudo-menu-cafe-5-subtitulo">
+              <h2 class="conteudo-cafe-cinco-subtitulo">Subtitulo cafe 5</h2>
+              <p class="conteudo-cafe-cinco-paragrafo">paragrafo tipos de cafe 5 para vender</p>
+            </div>
+          </div>
+          <div class="conteudo-menu-cafe-6">
+            <img class="conteudo-imagem-cafe-seis" src="tipo6cafe.svg" alt="Imagem de 6 tipo de cafe">
+            <div class="conteudo-menu-cafe-6-subtitulo">
+              <h2 class="conteudo-cafe-seis-subtitulo">Subtitulo do cafe 6</h2>
+              <p class="conteudo-cafe-seis-paragrafo">texto tipos de cafe 6 para vender</p>
+            </div>
+            </nav>
+
+          </div>
+    </section>
+    <section id="contato" class="conteudo-principal4">
+      <h2>Entre em Contato</h2>
+      <p>Deixe-nos uma mensagem se tiver alguma dúvida ou comentário.</p>
+      <!-- Formulário de Contato -->
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <!-- Informações de Contato -->
+      <div class="contato-info">
+        <h3>Contato</h3>
+        <p>Telefone: (XX) XXXX-XXXX</p>
+        <!-- Botão do WhatsApp com a imagem SVG -->
+        <a class="whatsapp-btn-small" href="https://wa.me/3133333333" target="_blank">
+          <img src="images\Redes sociais\whatsapp.png" alt="WhatsApp">
+        </a>
+        <!-- Botão do Instagram com a imagem SVG -->
+        <a class="instagram-btn-small" href="https://www.instagram.com/visaojrufop" target="_blank">
+          <img src="images\Redes sociais\instagram.png" alt="Instagram">
+        </a>
       </div>
-
-    </section class="conteudo-menu">
-
-    <h1 class="conteudo-menu-titulo">Menu</h1>
-
-    <div class="conteudo-menu-esquerda-cafe-1">
-      <img class="conteudo-imagem-cafe-um" src="tipo1cafe.svg" alt="Imagem de 1 tipo de cafe">
-
-      <div class="conteudo-menu-direita-cafe-1-subtitulo">
-        <h2 class="conteudo-cafe-um-subtitulo">Subtitulo do cafe 1</h2>
-        <p class="conteudo-cafe-um-paragrafo">paragrafo tipos de cafes para vender</p>
-      </div>
-      <div>
-        <div class="conteudo-menu-esquerda-cafe-2">
-
-          <img class="conteudo-imagem-cafe-dois" src="tipo2cafe.svg" alt="Imagem de 2 tipo de cafe">
-
-          <div class="conteudo-menu-direita-cafe-2-subtitulo">
-            <h2 class="conteudo-cafe-dois-subtitulo">Subtitulo cafe 2</h2>
-            <p class="conteudo-cafe-dois-paragrafo">paragrafo tipos de cafe 2 para vender</p>
-          </div>
-
-          <div>
-
-            <img class="conteudo-imagem-cafe-tres" src="tipo3cafe.svg" alt="Imagem de 3 tipo de cafe">
-            <h2 class="conteudo-cafe-tres-subtitulo">Subtitulo do cafe 3</h2>
-            <p class="conteudo-cafe-tres-paragrafo">texto tipos de cafe com leites para vender</p>
-          </div>
-
-        </div>
-
-
-        <div class="conteudo-menu-cafe-4">
-          <img class="conteudo-imagem-cafe-quatro" src="tipo4cafe.svg" alt="Imagem de 4 tipo de cafe">
-
-          <div class="conteudo-menu-cafe-4-subtitulo">
-            <h2 class="conteudo-cafe-quatro-subtitulo">Subtitulo do cafe 4</h2>
-            <p class="conteudo-cafe-quatro-paragrafo">paragrafo tipos de cafes 4 para vender</p>
-
-          </div>
-
-        </div>
-
-        <div class="conteudo-menu-cafe-5">
-          <img class="conteudo-imagem-cafe-cinco" src="tipo5cafe.svg" alt="Imagem de 5 tipo de cafe">
-
-          <div class="conteudo-menu-cafe-5-subtitulo">
-            <h2 class="conteudo-cafe-cinco-subtitulo">Subtitulo cafe 5</h2>
-            <p class="conteudo-cafe-cinco-paragrafo">paragrafo tipos de cafe 5 para vender</p>
-          </div>
-        </div>
-
-        <div class="conteudo-menu-cafe-6">
-          <img class="conteudo-imagem-cafe-seis" src="tipo6cafe.svg" alt="Imagem de 6 tipo de cafe">
-
-          <div class="conteudo-menu-cafe-6-subtitulo">
-            <h2 class="conteudo-cafe-seis-subtitulo">Subtitulo do cafe 6</h2>
-            <p class="conteudo-cafe-seis-paragrafo">texto tipos de cafe 6 para vender</p>
-          </div>
-          </nav>
-
-        </div>
-        </section>
-
-      </div>
-      </section>
-
-      <section class="conteudo-principal4">
-
-        <section id="contact">
-          <h2>Entre em Contato</h2>
-          <p>Deixe-nos uma mensagem se tiver alguma dúvida ou comentário.</p>
-
-          <!-- Formulário de Contato -->
-          <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-
-            <button type="submit">Enviar</button>
-          </form>
-
-          <!-- Informações de Contato -->
-          <div class="contato-info">
-            <h3>Contato</h3>
-            <p>Telefone: (XX) XXXX-XXXX</p>
-
-            <!-- Botão do WhatsApp com a imagem SVG -->
-            <a class="whatsapp-btn-small" href="https://wa.me/3133333333" target="_blank">
-              <img src="whatsapp.svg" alt="WhatsApp">
-
-            </a>
-            <!-- Botão do Instagram com a imagem SVG -->
-            <a class="instagram-btn-small" href="https://www.instagram.com/visaojrufop" target="_blank">
-              <img src="instagram-icon.svg" alt="Instagram">
-            </a>
-          </div>
-        </section>
-
+    </section>
   </main>
-
   <footer class="rodape">
     <div class="rodape-centro">
       <p class="rodape-escrito">Nome e horario de funcionamento</p>
       <p class="rodape-escrito-endereco">Endereco</p>
     </div>
-
     <div class="rodape-direita-logos">
-      <img class="rodape-imagem-instagram" src="instagram.svg" alt="imagem instagram">
-      <img class="rodape-imagem-facebook" src="facebook.svg" alt="imagem facebook">
-      <img class="rodape-imagem-whatsapp" src="whatsapp.svg" alt="imagem whatsapp">
+      <img class="rodape-imagem-instagram" src="images\Redes sociais\instagram.png" alt="imagem instagram">
+      <img class="rodape-imagem-facebook" src="images\Redes sociais\facebook.png" alt="imagem facebook">
+      <img class="rodape-imagem-whatsapp" src="images\Redes sociais\whatsapp.png"  alt="imagem whatsapp">
     </div>
-
   </footer>
-
-
 </body>
 
 </html>

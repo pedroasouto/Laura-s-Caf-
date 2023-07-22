@@ -64,47 +64,62 @@ body {
 /* Estilos do conteúdo */
 .conteudo {
   margin-bottom: 48px;
-  border-top: 0.4px solid #FFF;
+  border-top: 0.4px solid #fff;
+  background-color: #DCDFCC;
 }
 
+/* Estilos para o carrossel e conteúdo */
 .conteudo-principal {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap-reverse; /* Inverte a ordem para ficar responsivo */
   align-items: center;
   justify-content: space-around;
 }
 
+/* Estilos adicionais para ajustar o carrossel à direita */
 .conteudo-principal-imagem-carrossel {
-  width: 600px;
-  height: auto;
-  flex-shrink: 0;
-  border-radius: 50px;
-  margin: 160px 0;
-  /* Aumentar o espaçamento de 160px acima e abaixo da imagem (2 vezes mais) */
+  max-width: 20%; /* Ajusta a largura do carrossel */
+  margin-left: auto; /* Empurre o carrossel para a direita */
+  border-radius: 30px;
+}
+
+.carousel-inner img {
+  border-radius: 30px; /* Mesmo valor que o utilizado na classe conteudo-principal-imagem-carrossel */
+}
+
+/* Ajuste opcional para deixar o texto do conteúdo escrito um pouco mais próximo do carrossel */
+.conteudo-principal-escrito {
+  flex: 1; /* Define o espaço flexível para que o texto ocupe o restante do espaço */
+  margin-right: 20px;
+}
+
+/* Media query para dispositivos com telas menores */
+@media screen and (max-width: 768px) {
+  .conteudo-principal {
+    flex-direction: column; /* Altera a direção do flexbox para ficar em coluna */
+  }
+
+  .conteudo-principal-escrito {
+    margin-right: 0; /* Remove a margem direita para o texto ficar alinhado à esquerda */
+  }
 }
 
 .conteudo-principal-escrito-titulo {
-  width: 250px;
-  height: 120px;
-  flex-shrink: 0;
+  font-family: 'Roboto', sans-serif;
   color: #181E21;
-  text-align: center;
-  font-family: Rufina;
-  font-size: 50px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  font-size: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
 }
 
 .conteudo-principal-escrito-paragrafo {
-  width: 600px;
+  font-family: 'Open Sans', sans-serif;
   color: #181E21;
-  font-family: Rufina;
-  font-size: 24px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 40px;
-  text-align: justify;
+  font-size: 28px;
 }
 
 .conteudo-sobrenos {
@@ -393,6 +408,8 @@ body {
   gap: 32px;
   padding: 24px;
   justify-content: space-around;
+  width: 100px; /* Defina a largura desejada */
+  height: 100px; /* Defina a altura desejada */
 }
 
 /* Estilo personalizado para o botão do Instagram e WhatsApp */
