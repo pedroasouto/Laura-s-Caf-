@@ -163,6 +163,12 @@ body {
   text-align: justify;
 }
 
+.separador {
+  width: 100%;
+  height: 1.5px;
+  background-color: #181E21;
+}
+
 /* CSS Sobre nós */
 
 .conteudo-sobrenos {
