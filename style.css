@@ -136,11 +136,11 @@ body {
 
 
 .conteudo-principal-escrito-titulo {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rufina', sans-serif;
   color: #181E21;
   font-weight: 700;
   font-size: 48px;
-  margin-top: 0%;
+  margin-left: 70px;
 }
 
 .conteudo-principal-escrito-paragrafo {
@@ -174,6 +174,7 @@ body {
 .conteudo-sobrenos {
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
 }
 
 .conteudo-sobrenos-container {
@@ -201,11 +202,11 @@ body {
 }
 
 .conteudo-sobrenos-titulo {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rufina', sans-serif;
   color: #181E21;
   font-weight: 700;
   font-size: 48px;
-  margin-left: 134px;
+  margin-left: 90px;
 }
 
 .conteudo-sobrenos-subtitulo-historia {
@@ -281,12 +282,21 @@ body {
   list-style: none;
 }
 
+.conteudo-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  height: 700px;
+  margin-bottom: 100px
+}
+
 .conteudo-menu-titulo {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-family: 'Rufina', sans-serif;
   color: #181E21;
-  font-size: 60px;
-  margin-left: 134px;
+  font-weight: 700;
+  font-size: 48px;
+  margin-left: 90px;
 }
 
 .divisoes-menu {
