@@ -141,6 +141,8 @@ body {
   font-weight: 700;
   font-size: 48px;
   margin-left: 70px;
+  border-bottom: 3px solid #181E21;
+  width: 40%;
 }
 
 .conteudo-principal-escrito-paragrafo {
@@ -207,6 +209,8 @@ body {
   font-weight: 700;
   font-size: 48px;
   margin-left: 90px;
+  border-bottom: 3px solid #181E21;
+  width: 20%;
 }
 
 .conteudo-sobrenos-subtitulo-historia {
@@ -296,7 +300,9 @@ body {
   color: #181E21;
   font-weight: 700;
   font-size: 48px;
-  margin-left: 90px;
+  margin: 40px 0px 40px 90px;
+  border-bottom: 3px solid #181E21;
+  width: 20%;
 }
 
 .divisoes-menu {
