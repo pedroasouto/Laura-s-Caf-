@@ -219,6 +219,24 @@
     
         <button type="submit">Enviar</button>
       </form>
+                  <!-- Mapa com localizacao -->
+  <div id="map" style="height: 200px; width: 100%;"></div>
+
+  <script>
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: -19.836353, lng: -43.167877 }, 
+        zoom: 15
+      });
+
+      var marker = new google.maps.Marker({
+        map: map,
+        position: { lat: -19.836353, lng: -43.167877 } 
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApZ1hUJ2ZJKJrJI9fbGX1tuZHh2liCFog&callback=initMap" async defer></script>
+</div>
     
       <!-- Informações de Contato -->
       <div class="contato-info">
