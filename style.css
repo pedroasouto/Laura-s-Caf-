@@ -38,18 +38,18 @@ body {
 }
 
 .cabecalho-imagem img {
-  width: 60px;
+  width: 70px;
   /* Tamanho do logo */
-  height: 60px;
+  height: 70px;
   /* Tamanho do logo */
-  border-radius: 50px;
+  border-radius: 70px;
 }
 
 .cabecalho-nome-cafe {
   color: #FFF;
   font-family: 'Montserrat', sans-serif;
   font-size: 22px;
-  font-weight: 150;
+  font-weight: 450;
 }
 
 .cabecalho-menu {
@@ -200,7 +200,7 @@ body {
   width: 20%;
 }
 
-.conteudo-sobrenos-subtitulo-historia {
+.conteudo-sobrenos-subtitulo-historia, .conteudo-sobrenos-subtitulo-metodos, .conteudo-sobrenos-subtitulo-origem {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #181E21;
@@ -210,43 +210,8 @@ body {
 
 }
 
-.conteudo-sobrenos-paragrafo-historia {
+.conteudo-sobrenos-paragrafo-historia, .conteudo-sobrenos-paragrafo-metodos, .conteudo-sobrenos-paragrafo-origem {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  color: #181E21;
-}
-
-.conteudo-sobrenos-subtitulo-metodos {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  color: #181E21;
-}
-
-.conteudo-sobrenos-paragrafo-metodos {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  color: #181E21;
-}
-
-.conteudo-sobrenos-subtitulo-historia-vertical {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  justify-content: space-around;
-}
-
-.conteudo-sobrenos-subtitulo-origem {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  color: #181E21;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  justify-content: space-around;
-}
-
-.conteudo-sobrenos-paragrafo-origem {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #181E21;
 }
@@ -254,12 +219,6 @@ body {
 .conteudo-sobrenos-imagem {
   height: 200px;
   margin-top: 20px;
-}
-
-.conteudo-sobrenos-paragrafo-origem {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  color: #181E21;
 }
 
 /* CSS Menu */
@@ -404,26 +363,37 @@ body {
   /* Defina a altura desejada */
 }
 
-/* Estilos gerais para o formulário e as informações de contato */
+/* Estilos para a seção de contato */
 #contato {
+  font-family: 'Montserrat', sans-serif;
   background-color: #DCDFCC;
   padding: 20px;
 }
 
+.deixe-msg {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilos para informações de contato */
 .contato-info {
   margin-top: 20px;
 }
 
+/* Estilos para cabeçalhos */
 h2 {
   color: #333;
 }
 
+/* Estilos para parágrafos */
 p {
   color: #666;
 }
 
 /* Estilos para o formulário de contato */
 form {
+  font-family: 'Montserrat', sans-serif;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
