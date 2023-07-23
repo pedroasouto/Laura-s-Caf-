@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'Rufina', serif;
 }
 
 body {
@@ -25,6 +26,8 @@ body {
   /* Para centralizar verticalmente os itens */
   padding: 0 20px;
   /* Adicionando espaçamento interno nas laterais do cabeçalho */
+  position: fixed;
+  z-index: 10;
 }
 
 .cabecalho-imagem {
@@ -44,7 +47,7 @@ body {
 .cabecalho-nome-cafe {
   color: #FFF;
   font-family: 'Rufina', serif;
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 700;
 }
 
@@ -58,7 +61,7 @@ body {
   text-align: center;
   font-family: 'Rufina', serif;
   /* Certifique-se de que a fonte Rufina seja carregada */
-  font-size: 16px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
