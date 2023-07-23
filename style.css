@@ -277,7 +277,7 @@ body {
 
 /* CSS Menu */
 
-.flex-container {
+.colunas-menu {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;  
@@ -291,8 +291,8 @@ body {
   flex-direction: column;
   align-items: left;
   justify-content: space-around;
-  height: 700px;
-  margin-bottom: 100px
+  height: fit-content;
+  margin-bottom: 40px
 }
 
 .conteudo-menu-titulo {
@@ -322,7 +322,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-left: 50px
 }
 
 .coluna-4-a-6 {
