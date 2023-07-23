@@ -375,39 +375,53 @@ body {
 }
 
 .rodape {
-  border-top: 0.4px solid #181E21;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #1E1E1E;
+  position: relative;
+  height: 110px;
 }
 
 .rodape-centro {
   display: flex;
   flex-direction: column;
-  gap: 32px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
 }
 
-.rodape-escrito, .rodape-escrito-endereco {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
+.rodape-escrito {
+  font-family: 'Rufina', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   color: #FFF;
+  margin: 0px;
+}
+
+.rodape-logos {
+  width: 60px;
+  height: 60px;
+}
+
+.rodape-logos img {
+  width: 100%;
+  height: 100%;
 }
 
 .rodape-direita-logos {
+  position: absolute;
+  right: 60px;
   display: flex;
   flex-direction: row;
   align-items: right;
   gap: 32px;
   padding: 24px;
   justify-content: space-around;
-  width: 100px;
-  /* Defina a largura desejada */
-  height: 100px;
-  /* Defina a altura desejada */
+  width: 200px;
+  height: 100%;
 }
 
 /* Estilos para a seção de contato */
@@ -437,6 +451,10 @@ body {
   font-size: 22px;
   color: #181E21;
   font-weight: 600;
+}
+
+.texto-contato-info span {
+  font-weight: 400;
 }
 
 /* Estilos para cabeçalhos */
