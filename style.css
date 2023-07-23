@@ -146,16 +146,18 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #181E21;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
+  text-align: justify;
 }
 
 .conteudo-principal-escrito-paragrafo2 {
   margin-top: 40px;
-  margin-left: 50px;
+  margin-left: 40px;
   font-family: 'Open Sans', sans-serif;
   color: #181E21;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
+  text-align: justify;
 }
 
 .conteudo-sobrenos {
