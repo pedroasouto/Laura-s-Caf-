@@ -320,8 +320,58 @@ body {
 .conteudo-contato {
   display: flex;
   flex-direction: row;
-  align-items: right;
-  justify-content: space-around;
+  position: relative;
+}
+
+.conteudo-contato-int {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.conteudo-contato-titulo {
+  font-family: 'Rufina', sans-serif;
+  color: #181E21;
+  font-weight: 700;
+  font-size: 48px;
+  border-bottom: 3px solid #181E21;
+  width: 20%;
+  margin: 20px 0px 0px 70px;
+}
+
+.conteudo-contato-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0px 0px 70px;  
+}
+
+.conteudo-mapa-contato {
+  width: 350px;
+  height: 350px;
+  border-radius: 5%;
+}
+
+.form-contato {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.divs-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagem-contato {
+  height: 100%;
+  width: 350px;
+  margin: -20px 0px -20px 0px;
+  position: absolute;
+  right: 0px;
 }
 
 .rodape {
@@ -369,13 +419,24 @@ body {
 
 .deixe-msg {
   font-size: 24px;
-  color: #333;
+  color: #181E21;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 /* Estilos para informações de contato */
 .contato-info {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.texto-contato-info {
+  font-family: 'Rufina', sans-serif;
+  font-size: 22px;
+  color: #181E21;
+  font-weight: 600;
 }
 
 /* Estilos para cabeçalhos */

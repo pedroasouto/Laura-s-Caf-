@@ -204,58 +204,73 @@
     <div class="separador"></div>
 
     <section id="contato" class="conteudo-contato">
+      <div class="conteudo-contato-int">
+        <h1 class="conteudo-contato-titulo">Contato</h1>
+        <div class="conteudo-contato-container">
 
-      <h2>Entre em Contato</h2>
-      <!-- Mapa com localizacao -->
-      <div id="map" style="height: 300px; width: 300px;"></div>
-
-      <script>
-        function initMap() {
-          var map = new google.maps.Map(document.getElementById('map'), {
-            center: { lat: -19.836353, lng: -43.167877 },
-            zoom: 15
-          });
-
-          var marker = new google.maps.Marker({
-            map: map,
-            position: { lat: -19.836353, lng: -43.167877 }
-          });
-        }
-      </script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApZ1hUJ2ZJKJrJI9fbGX1tuZHh2liCFog&callback=initMap"
-        async defer></script>
-
-      <!-- Formulário de Contato -->
-      <form>
-        <p class="deixe-msg">Deixe-nos uma mensagem!</p>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
+          <!-- Informações de Contato -->
+          <div class="contato-info">
+            <p class="texto-contato-info">E-mail<br />laurascafe@gmail.com</p>
+            <p class="texto-contato-info">Telefone<br />(31) 99988-7766</p>
 
 
-      <!-- Informações de Contato -->
-      <div class="contato-info">
-        <h3>Contato</h3>
-        <p>Telefone: (XX) XXXX-XXXX</p>
+            <!-- Botão do WhatsApp com a imagem SVG -->
+            <!-- <a class="whatsapp-btn-small" href="https://wa.me/3133333333" target="_blank">
+              <img src="images\Redes sociais\whatsapp.png" alt="WhatsApp">
+            </a> -->
 
-        <!-- Botão do WhatsApp com a imagem SVG -->
-        <a class="whatsapp-btn-small" href="https://wa.me/3133333333" target="_blank">
-          <img src="images\Redes sociais\whatsapp.png" alt="WhatsApp">
-        </a>
+            <!-- Botão do Instagram com a imagem SVG -->
+            <!-- <a class="instagram-btn-small" href="https://www.instagram.com/visaojrufop" target="_blank">
+              <img src="images\Redes sociais\instagram.png" alt="Instagram">
+            </a> -->
+          </div>
 
-        <!-- Botão do Instagram com a imagem SVG -->
-        <a class="instagram-btn-small" href="https://www.instagram.com/visaojrufop" target="_blank">
-          <img src="images\Redes sociais\instagram.png" alt="Instagram">
-        </a>
+
+          <!-- Formulário de Contato -->
+          <form class="form-contato">
+            <p class="deixe-msg">Deixe-nos uma mensagem!</p>
+            <div class="divs-form">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="divs-form">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="divs-form">
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+          </form>
+
+          <!-- Mapa com localizacao -->
+          <div id="map" class="conteudo-mapa-contato">
+            <script>
+              function initMap() {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  center: { lat: -19.836353, lng: -43.167877 },
+                  zoom: 15
+                });
+
+                var marker = new google.maps.Marker({
+                  map: map,
+                  position: { lat: -19.836353, lng: -43.167877 }
+                });
+              }
+            </script>
+            <script
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApZ1hUJ2ZJKJrJI9fbGX1tuZHh2liCFog&callback=initMap"
+              async defer></script>
+          </div>
+
+
+        </div>
       </div>
+      <img class="imagem-contato" src="images\Café e grãos\café e grãos (1).jpg" alt="Imagem café">
     </section>
 
 
