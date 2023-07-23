@@ -16,7 +16,7 @@ body {
 /* Estilos do cabeçalho */
 .cabecalho {
   width: 100%;
-  height: 80px;
+  height: 100px;
   /* Reduzindo a altura da faixa preta */
   background: #1E1E1E;
   display: flex;
@@ -24,7 +24,7 @@ body {
   /* Para alinhar os itens à esquerda e à direita */
   align-items: center;
   /* Para centralizar verticalmente os itens */
-  padding: 0 20px;
+  padding: 0 50px;
   /* Adicionando espaçamento interno nas laterais do cabeçalho */
   position: fixed;
   z-index: 10;
@@ -33,7 +33,7 @@ body {
 .cabecalho-imagem {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   /* Espaçamento entre o logo e o texto */
 }
 
@@ -47,13 +47,16 @@ body {
 
 .cabecalho-nome-cafe {
   color: #FFF;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
-  font-weight: 450;
+  font-family: 'Rufina', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  border-bottom: 2px solid #fff
 }
 
 .cabecalho-menu {
   display: flex;
+  align-items: center;
+  height: 100%;
   gap: 32px;
 }
 
@@ -75,14 +78,14 @@ body {
   /* Espaçamento à esquerda */
 }
 
-.cabecalho-menu-item:last-child {
-  margin-right: 20px;
-  /* Espaçamento à direita */
+.cabecalho-menu-item:hover {
+  border-bottom: 2px solid #fff
 }
 
 /* Estilos do conteúdo */
 .conteudo {
   background-color: #DCDFCC;
+  padding-top: 80px;
 }
 
 /* Estilos para o carrossel e conteúdo */
@@ -92,7 +95,7 @@ body {
   justify-content: space-around;
   flex-direction: row;
   padding: 50px;
-  margin-bottom: -60px;
+  height: 90vh;
 }
 
 /* Estilos adicionais para ajustar o carrossel à direita */
@@ -172,7 +175,7 @@ body {
   width: 100%;
   justify-content: space-around;
   padding: 50px 0px;
-  padding-left: 100px;
+  padding-left: 90px;
   gap: 70px;
 }
 
@@ -301,12 +304,6 @@ body {
   color: #181E21;
 }
 
-
-.conteudo-principal4 {
-  margin-bottom: 48px;
-  border-top: 0.4px solid #181E21;
-}
-
 .conteudo-email-telefone-eventos {
   display: flex;
   flex-direction: column;
@@ -320,7 +317,7 @@ body {
   color: #181E21;
 }
 
-.conteudo-principal4 {
+.conteudo-contato {
   display: flex;
   flex-direction: row;
   align-items: right;
