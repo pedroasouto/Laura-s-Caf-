@@ -81,18 +81,17 @@ body {
 
 /* Estilos do conteúdo */
 .conteudo {
-  margin-bottom: 48px;
-  border-top: 0.4px solid #fff;
   background-color: #DCDFCC;
 }
 
 /* Estilos para o carrossel e conteúdo */
-.conteudo-principal {
+.conteudo-inicio {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  /* Altera a direção do flexbox para ficar em linha */
+  padding: 50px;
+  margin-bottom: -60px;
 }
 
 /* Estilos adicionais para ajustar o carrossel à direita */
@@ -114,11 +113,10 @@ body {
 }
 
 /* Ajuste opcional para deixar o texto do conteúdo escrito um pouco mais próximo do carrossel */
-.conteudo-principal-escrito {
-  flex: 1;
-  /* Define o espaço flexível para que o texto ocupe o restante do espaço */
-  margin-left: 20px;
-  margin-right: 20px;
+.conteudo-texto-inicio {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
 }
 
 /* Media query para dispositivos com telas menores */
@@ -128,40 +126,28 @@ body {
     /* Altera a direção do flexbox para ficar em coluna */
   }
 
-  .conteudo-principal-escrito {
+  .conteudo-texto-inicio {
     margin-right: 0;
     /* Remove a margem direita para o texto ficar alinhado à esquerda */
   }
 }
 
 
-.conteudo-principal-escrito-titulo {
+.conteudo-titulo-inicio {
   font-family: 'Rufina', sans-serif;
   color: #181E21;
   font-weight: 700;
   font-size: 48px;
-  margin-left: 70px;
   border-bottom: 3px solid #181E21;
   width: 40%;
 }
 
-.conteudo-principal-escrito-paragrafo {
-  margin-top: 40px;
-  margin-left: 40px;
+.conteudo-inicio-paragrafo {
+  margin: 40px 75px 0px 0px;
   font-family: 'Open Sans', sans-serif;
   color: #181E21;
   font-weight: 700;
-  font-size: 18px;
-  text-align: justify;
-}
-
-.conteudo-principal-escrito-paragrafo2 {
-  margin-top: 40px;
-  margin-left: 40px;
-  font-family: 'Open Sans', sans-serif;
-  color: #181E21;
-  font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
   text-align: justify;
 }
 
