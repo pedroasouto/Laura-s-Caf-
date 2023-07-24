@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Open+Sans&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -209,7 +210,9 @@ body {
   width: 20%;
 }
 
-.conteudo-sobrenos-subtitulo-historia, .conteudo-sobrenos-subtitulo-metodos, .conteudo-sobrenos-subtitulo-origem {
+.conteudo-sobrenos-subtitulo-historia,
+.conteudo-sobrenos-subtitulo-metodos,
+.conteudo-sobrenos-subtitulo-origem {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #181E21;
@@ -219,7 +222,9 @@ body {
 
 }
 
-.conteudo-sobrenos-paragrafo-historia, .conteudo-sobrenos-paragrafo-metodos, .conteudo-sobrenos-paragrafo-origem {
+.conteudo-sobrenos-paragrafo-historia,
+.conteudo-sobrenos-paragrafo-metodos,
+.conteudo-sobrenos-paragrafo-origem {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   color: #181E21;
@@ -236,7 +241,7 @@ body {
 .colunas-menu {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;  
+  justify-content: space-around;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -318,7 +323,12 @@ body {
   align-items: left;
 }
 
-.conteudo-email-subtitulo, .conteudo-telefone-subtitulo, .conteudo-eventos-subtitulo, .conteudo-email-paragrafo, .conteudo-telefone-paragrafo, .conteudo-eventos-paragrafo {
+.conteudo-email-subtitulo,
+.conteudo-telefone-subtitulo,
+.conteudo-eventos-subtitulo,
+.conteudo-email-paragrafo,
+.conteudo-telefone-paragrafo,
+.conteudo-eventos-paragrafo {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   color: #181E21;
@@ -343,7 +353,7 @@ body {
   font-weight: 700;
   font-size: 48px;
   border-bottom: 3px solid #181E21;
-  width: 20%;
+  width: 27%;
   margin: 20px 0px 0px 70px;
 }
 
@@ -352,7 +362,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 0px 0px 70px;  
+  margin: 50px 0px 0px 70px;
 }
 
 .conteudo-mapa-contato {
@@ -531,72 +541,3 @@ button:hover {
     max-width: 100%;
   }
 }
-
-  .cabecalho-imagem {
-    gap: 10px;
-  }
-
-  .cabecalho-imagem img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-  }
-
-  .cabecalho-nome-cafe {
-    font-size: 24px;
-  }
-
-  .cabecalho-menu {
-    gap: 10px;
-  }
-
-  .cabecalho-menu-item {
-    font-size: 18px;
-  }
-
-  .conteudo-principal-imagem-carrossel {
-    margin-top: 50px;
-    margin-bottom: 70px;
-  }
-
-  .conteudo-texto-inicio {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .conteudo-titulo-inicio {
-    font-size: 36px;
-  }
-
-  .conteudo-inicio-paragrafo,
-  .conteudo-sobrenos-paragrafo-historia,
-  .conteudo-sobrenos-paragrafo-metodos,
-  .conteudo-sobrenos-paragrafo-origem,
-  .texto-contato-info {
-    font-size: 18px;
-  }
-
-  .conteudo-imagem-cafe {
-    height: 120px;
-  }
-
-  .form-contato {
-    max-width: 100%;
-  }
-
-  .conteudo-mapa-contato {
-    width: 100%;
-    height: 250px;
-  }
-
-  .rodape-escrito {
-    font-size: 14px;
-  }
-
-  .rodape-logos {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-
